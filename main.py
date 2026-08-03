@@ -1,3 +1,5 @@
+from createWorkout import generate_workout
+
 print("=== BMI Calculator ===")
 
 # Get weight
@@ -30,6 +32,50 @@ while True:
         print("Please enter a valid number.\n")
 
 
+# Find Intensity
+print('''
+Are You:
+1. Beginner
+2. Intermidiate
+3. Expert
+''')
+
+
+intensity_num = int(input('Enter Here: '))
+intensity = ''
+
+if intensity_num == 1:
+    intensity = 'beginner'
+elif intensity_num == 2:
+    intensity = 'intermediate'
+elif intensity_num == 3:
+    intensity = 'expert'
+else:
+    print('Try Again')
+    intensity_num = int(input('Enter Here: '))
+
+# Find Goal
+
+print('''
+Whats your Goal
+
+1. Gain Muscle
+2. Lose Weight
+
+''')
+
+goal_num = int(input('Enter Here: '))
+goal = ''
+
+if goal_num == 1:
+    goal = 'gain muscle'
+elif goal_num == 2:
+    goal = 'lose weight'
+
+else:
+    print('Try Again')
+    goal_num = int(input('Enter Here: '))
+
 # Convert cm to meters
 height = height / 100
 
@@ -48,3 +94,6 @@ elif bmi < 30:
     print("Category: Overweight")
 else:
     print("Category: Obese")
+
+generate_workout(goal, intensity)
+
