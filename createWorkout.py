@@ -7,6 +7,7 @@ def generate_workout(goal, intensity):
         if i['goal'] == goal:
             single_exercise = {"name": i['name'], 'goal': i['goal'], "intensity": i['intensity'][intensity], "needsGym": i['needsGym']}
             workout.append(single_exercise)
+    print('-------------- Exercises -------------------')
     for exercise in workout:
         print(f"Exercise : {exercise['name']}")
         # print(f"Goal     : {exercise['goal']}")

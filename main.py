@@ -44,15 +44,20 @@ Are You:
 intensity_num = int(input('Enter Here: '))
 intensity = ''
 
-if intensity_num == 1:
-    intensity = 'beginner'
-elif intensity_num == 2:
-    intensity = 'intermediate'
-elif intensity_num == 3:
-    intensity = 'expert'
-else:
-    print('Try Again')
-    intensity_num = int(input('Enter Here: '))
+while True:
+    if intensity_num == 1:
+        intensity = 'beginner'
+        break
+    elif intensity_num == 2:
+        intensity = 'intermediate'
+        break
+    elif intensity_num == 3:
+        intensity = 'expert'
+        break
+    else:
+        print('Try Again')
+        intensity_num = int(input('Enter Here: '))
+        continue
 
 # Find Goal
 
@@ -63,18 +68,20 @@ Whats your Goal
 2. Lose Weight
 
 ''')
-
 goal_num = int(input('Enter Here: '))
 goal = ''
+while True:
+    if goal_num == 1:
+        goal = 'gain muscle'
+        break
+    elif goal_num == 2:
+        goal = 'lose weight'
+        break
 
-if goal_num == 1:
-    goal = 'gain muscle'
-elif goal_num == 2:
-    goal = 'lose weight'
-
-else:
-    print('Try Again')
-    goal_num = int(input('Enter Here: '))
+    else:
+        print('Try Again')
+        goal_num = int(input('Enter Here: '))
+        continue
 
 # Convert cm to meters
 height = height / 100
