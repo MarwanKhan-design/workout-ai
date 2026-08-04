@@ -1,4 +1,4 @@
-from createWorkout import generate_workout
+from createWorkout import generate_workout, print_workout
 
 print("=== BMI Calculator ===")
 
@@ -69,13 +69,13 @@ Whats your Goal
 
 ''')
 goal_num = int(input('Enter Here: '))
-goal = ''
+type_of = ''
 while True:
     if goal_num == 1:
-        goal = 'gain muscle'
+        type_of = 'strength'
         break
     elif goal_num == 2:
-        goal = 'lose weight'
+        type_of = 'cardio'
         break
 
     else:
@@ -124,4 +124,4 @@ elif bmi < 30:
 else:
     print("Category: Obese")
 
-generate_workout(goal, intensity, gym_available)
+print_workout(generate_workout(type_of, intensity))
