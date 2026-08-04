@@ -1,10 +1,10 @@
 from data import exercises
 
-def generate_workout(goal, intensity):
+def generate_workout(goal, intensity, gym_available):
     workout = []
 
     for i in exercises:
-        if i['goal'] == goal:
+        if i['goal'] == goal and gym_available == i['needsGym']:
             single_exercise = {"name": i['name'], 'goal': i['goal'], "intensity": i['intensity'][intensity], "needsGym": i['needsGym']}
             workout.append(single_exercise)
     print('-------------- Exercises -------------------')

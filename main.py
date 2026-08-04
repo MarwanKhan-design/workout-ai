@@ -83,6 +83,28 @@ while True:
         goal_num = int(input('Enter Here: '))
         continue
 
+# Gym Available
+print('''
+Do you have a gym available
+
+0. No
+1. Yes
+
+''')
+gym_available = False
+gym_available_input = int(input('Enter Here: '))
+
+while True:
+    if gym_available_input == 1:
+        gym_available = True
+        break
+    elif gym_available_input == 0:
+        gym_available = False
+        break
+    else:
+        print('Enter 0 or 1 ')
+        continue
+
 # Convert cm to meters
 height = height / 100
 
@@ -102,5 +124,4 @@ elif bmi < 30:
 else:
     print("Category: Obese")
 
-generate_workout(goal, intensity)
-
+generate_workout(goal, intensity, gym_available)
