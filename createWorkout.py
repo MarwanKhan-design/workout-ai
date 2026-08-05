@@ -44,9 +44,9 @@ def generate_strength_workout(intensity, strength_exercises=None):
     workout = []
 
     target_sets = {
-        "beginner": 10,
-        'intermediate': 15,
-        'expert': 20
+        "beginner": 25,
+        'intermediate': 40,
+        'expert': 50
     }
 
     total_sets = 0
