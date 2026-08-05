@@ -1,4 +1,5 @@
 from createWorkout import generate_workout, print_workout
+from gui import show_gui
 
 print("=== BMI Calculator ===")
 
@@ -83,28 +84,6 @@ while True:
         goal_num = int(input('Enter Here: '))
         continue
 
-# Gym Available
-print('''
-Do you have a gym available
-
-0. No
-1. Yes
-
-''')
-gym_available = False
-gym_available_input = int(input('Enter Here: '))
-
-while True:
-    if gym_available_input == 1:
-        gym_available = True
-        break
-    elif gym_available_input == 0:
-        gym_available = False
-        break
-    else:
-        print('Enter 0 or 1 ')
-        continue
-
 # Convert cm to meters
 height = height / 100
 
@@ -124,4 +103,7 @@ elif bmi < 30:
 else:
     print("Category: Obese")
 
-print_workout(generate_workout(type_of, intensity))
+full_workout = generate_workout(type_of, intensity)
+
+print_workout(full_workout)
+show_gui(full_workout)

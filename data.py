@@ -2,6 +2,7 @@ exercises = [
     # ==================================================
     # CARDIO
     # ==================================================
+
     {
         "name": "Walking",
         "type": "cardio",
@@ -9,9 +10,9 @@ exercises = [
         "muscle_group": "legs",
         "needs_gym": False,
         "intensity": {
-            "beginner": {"duration": 20, "unit": "min"},
-            "intermediate": {"duration": 40, "unit": "min"},
-            "expert": {"duration": 60, "unit": "min"}
+            "beginner": {"duration": 15, "unit": "min"},
+            "intermediate": {"duration": 20, "unit": "min"},
+            "expert": {"duration": 25, "unit": "min"}
         }
     },
     {
@@ -21,9 +22,9 @@ exercises = [
         "muscle_group": "legs",
         "needs_gym": False,
         "intensity": {
-            "beginner": {"duration": 15, "unit": "min"},
-            "intermediate": {"duration": 30, "unit": "min"},
-            "expert": {"duration": 45, "unit": "min"}
+            "beginner": {"duration": 10, "unit": "min"},
+            "intermediate": {"duration": 15, "unit": "min"},
+            "expert": {"duration": 20, "unit": "min"}
         }
     },
     {
@@ -34,8 +35,8 @@ exercises = [
         "needs_gym": False,
         "intensity": {
             "beginner": {"duration": 10, "unit": "min"},
-            "intermediate": {"duration": 20, "unit": "min"},
-            "expert": {"duration": 30, "unit": "min"}
+            "intermediate": {"duration": 15, "unit": "min"},
+            "expert": {"duration": 20, "unit": "min"}
         }
     },
     {
@@ -45,9 +46,9 @@ exercises = [
         "muscle_group": "legs",
         "needs_gym": False,
         "intensity": {
-            "beginner": {"duration": 10, "unit": "min"},
-            "intermediate": {"duration": 20, "unit": "min"},
-            "expert": {"duration": 35, "unit": "min"}
+            "beginner": {"duration": 8, "unit": "min"},
+            "intermediate": {"duration": 12, "unit": "min"},
+            "expert": {"duration": 18, "unit": "min"}
         }
     },
     {
@@ -57,9 +58,9 @@ exercises = [
         "muscle_group": "legs",
         "needs_gym": False,
         "intensity": {
-            "beginner": {"duration": 15, "unit": "min"},
-            "intermediate": {"duration": 30, "unit": "min"},
-            "expert": {"duration": 45, "unit": "min"}
+            "beginner": {"duration": 10, "unit": "min"},
+            "intermediate": {"duration": 15, "unit": "min"},
+            "expert": {"duration": 20, "unit": "min"}
         }
     },
     {
@@ -70,8 +71,8 @@ exercises = [
         "needs_gym": False,
         "intensity": {
             "beginner": {"duration": 5, "unit": "min"},
-            "intermediate": {"duration": 10, "unit": "min"},
-            "expert": {"duration": 20, "unit": "min"}
+            "intermediate": {"duration": 8, "unit": "min"},
+            "expert": {"duration": 12, "unit": "min"}
         }
     },
     {
@@ -82,8 +83,8 @@ exercises = [
         "needs_gym": False,
         "intensity": {
             "beginner": {"duration": 5, "unit": "min"},
-            "intermediate": {"duration": 10, "unit": "min"},
-            "expert": {"duration": 15, "unit": "min"}
+            "intermediate": {"duration": 8, "unit": "min"},
+            "expert": {"duration": 10, "unit": "min"}
         }
     },
     {
@@ -94,8 +95,8 @@ exercises = [
         "needs_gym": False,
         "intensity": {
             "beginner": {"duration": 5, "unit": "min"},
-            "intermediate": {"duration": 10, "unit": "min"},
-            "expert": {"duration": 15, "unit": "min"}
+            "intermediate": {"duration": 8, "unit": "min"},
+            "expert": {"duration": 10, "unit": "min"}
         }
     },
     {
@@ -105,9 +106,9 @@ exercises = [
         "muscle_group": "full body",
         "needs_gym": False,
         "intensity": {
-            "beginner": {"duration": 10, "unit": "min"},
-            "intermediate": {"duration": 15, "unit": "min"},
-            "expert": {"duration": 20, "unit": "min"}
+            "beginner": {"duration": 8, "unit": "min"},
+            "intermediate": {"duration": 10, "unit": "min"},
+            "expert": {"duration": 15, "unit": "min"}
         }
     },
     {
@@ -118,8 +119,8 @@ exercises = [
         "needs_gym": False,
         "intensity": {
             "beginner": {"duration": 10, "unit": "min"},
-            "intermediate": {"duration": 20, "unit": "min"},
-            "expert": {"duration": 30, "unit": "min"}
+            "intermediate": {"duration": 15, "unit": "min"},
+            "expert": {"duration": 20, "unit": "min"}
         }
     },
 

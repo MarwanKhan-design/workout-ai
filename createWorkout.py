@@ -7,9 +7,9 @@ def generate_cardio_workout(intensity="beginner", cardio_exercises=None):
     workout = []
 
     target_duration = {
-        "beginner": 30,
-        "intermediate": 45,
-        "expert": 60
+        "beginner": 60,
+        "intermediate": 80,
+        "expert": 120
     }
 
     total_duration = 0
@@ -44,9 +44,9 @@ def generate_strength_workout(intensity, strength_exercises=None):
     workout = []
 
     target_sets = {
-        "beginner": 25,
-        'intermediate': 40,
-        'expert': 50
+        "beginner": 20,
+        'intermediate': 25,
+        'expert': 30
     }
 
     total_sets = 0
